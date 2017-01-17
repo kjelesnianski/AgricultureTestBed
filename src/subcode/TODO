@@ -1,0 +1,12 @@
+This folder contains subroutines/helper functions for the main Matlab
+GUI interface AgBotGUI.m
+
+Create README giving quick overview of each Matlab function.
+
+Explain: To retain memory of where the Agbed Head currently is in
+case of Power Loss, Emergency shutoff, etc., a file was created for
+redundancy (not really redundancy as the MSP432 does not have 
+non-volatile memory). When the System is rebooted, if the file is
+non-void, the saved location will be imported into AgBed's Head 
+current location, thus saving the need to recalibration and
+preventing run-time errors of going outside of the valid range.
